@@ -1,1 +1,144 @@
+= Kea: A Curiosity-Driven, Post-Platform Security Ecosystem
+Jonathan D.A. Jewell <https://github.com/hyperpolymath>
+v1.0.0-draft.1, December 2025
+:toc: macro
+:toc-title: The Flock Map
+:description: Distributed high-assurance architecture for the separation of administration from runtime.
 
+== Problem
+Modern security infrastructure suffers from **"The Surveillance Paradox"**:
+* **Static Panopticons:** Rigid surveillance that ignores the fluid nature of modern threats.
+* **Platform Dependency:** Absolute reliance on centralized cloud vendors for "safety."
+* **Artifact Fragmentation:** Security logic, recovery playbooks, and system state buried across 165+ disparate repositories.
+* **The Slop Factor:** Redundant, messy code (jQuery, outdated JS) acting as an unmonitored attack vector.
+
+== Solution: The Kea Model
+**Kea** is a distributed, high-assurance infrastructure that secures digital assets through **Relentless Curiosity**. Rejecting the "Top-Down" model, Kea employs an **Investigative-Sensor** approach (Kea-Mandible) coupled with **Cognitive-Heuristic** logic (Kea-Wit). It treats infrastructure as a living ecological niche, employing **Moving Target Defence (MTD)** and **Neurosymbolic Verification** to ensure total system integrity.
+
+== Architecture
+A multi-language functional system leveraging a **Cladistic** repository structure:
+
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  The Range (Runtime): OpenLiteSpeed, PHP-Aegis, Sinople-Theme   │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  Kea-Mandible (Sensors): Mercury-based I/O, WP-Praxis (Rust)    │
+└────────────────────────┬────────────────────────────────────────┘
+                         │ (Kea-Call: Cap'n Proto / MCP / Deno)
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  Kea-Wit (Neural): Logtalk Reasoning, Echidna Formal Proofs     │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+            ┌────────────┴────────────┐
+            │                         │
+            ▼                         ▼
+┌───────────────────────┐  ┌──────────────────────────────────────┐
+│  Kea-Bivouac (Admin)  │  │  Refugia (Librarian)                 │
+│  - Project-Wharf      │  │  - SCM Status Matrix                 │
+│  - Playbook Execution │  │  - Global State Archive              │
+│  - mTLS Ingress       │  │  - The-Burrow (Satellite Manager)    │
+└───────────────────────┘  └──────────────────────────────────────┘
+
+== Technology Stack
+| Layer | Technology | Rationale |
+|-------|-----------|-----|
+| **Reasoning** | Logtalk / Prolog | High-level heuristic logic and "Wit." |
+| **Sensors** | Mercury / Rust | Type-safe, high-speed "Mandible" scanning. |
+| **Protocol** | Cap'n Proto / MCP | Zero-copy binary "Calls" via Deno Deploy. |
+| **Storage** | ArangoDB / Dragonfly | Graph-based state tracking and high-speed cache. |
+| **Shell** | Valence / Oil | Modern, secure actuators for the "Bivouac." |
+| **Frontend** | ReScript / TEA | Functional UI for "The Range" (Sinople). |
+
+== Critical Constraints
+❌ **NO PANOPTICON** - No top-down surveillance; curiosity-driven only.
+✅ **Oxford British English** - All documentation and naming conventions.
+✅ **Refugia-First** - State must be preserved in safe pockets (Refugia).
+✅ **Moving Target** - Infrastructure must fluctuate to prevent persistence.
+✅ **Slop-Free** - Active rejection of bloat via `/slopctl`.
+
+== Project Structure (The Flock)
+.
+├── Refugia/                     # The Ancestral Root (Master Hub)
+│   ├── matrix/                 # status_matrix.scm (The health map)
+│   ├── playbooks/              # PLAYBOOK.scm (Deterministic SOPs)
+│   └── librarian/              # Argus audit logic (The Librarian)
+├── Kea-Wit/                     # Neural Clade: Logic
+│   ├── heuristics/             # Logtalk-based reasoning
+│   └── validation/             # Echidna formal verification
+├── Kea-Call/                    # Signaling Clade: MCP
+│   ├── schemas/                # Cap'n Proto definitions
+│   └── edge/                   # Deno Deploy handlers
+├── Kea-Bivouac/                 # Authority Clade: Project-Wharf
+│   ├── ingress/                # Cadre-Router / Zig-Bridge
+│   └── secrets/                # Januskey management
+├── Kea-Mandible/                # Investigative Clade: Sensors
+│   ├── praxis/                 # Rust-based WP scanning
+│   └── mercury/                # Low-level system auditors
+└── The-Range/                   # Expressive Clade: Runtime
+    ├── sinople/                # ReScript/TEA Theme
+    └── aegis/                  # Hardened PHP/OLS runtime
+
+== Getting Started
+=== Prerequisites
+* **Just** (Primary task runner)
+* **Podman** (Container engine)
+* **Deno** (For Edge signaling)
+* **Valence Shell** (Primary actuator)
+
+=== Quick Start
+1. **Clone the Root:** `git clone https://github.com/hyperpolymath/refugia`
+2. **Initialise the Flock:** `cd refugia && just hatch-root`
+3. **Audit the Mandibles:** `just audit-flock`
+4. **Deploy to The Range:** `just deploy-yacht --target=london-edge`
+
+== Key Design Concepts
+
+=== The Lithospheric Refugium
+Your state is not stored in a "Cloud." It is preserved in **Refugia** (Safe Havens). In the event of an environmental catastrophe (a breach) on **The Range**, the **Kea-Bivouac** (The Roost) uses the immutable DNA stored in Refugia to "re-hatch" a clean instance.
+
+
+
+=== Kea-Wit Heuristics
+Kea-Wit uses "Wit" (intelligent logic) rather than simple pattern matching.
+[source,prolog]
+----
+% Logtalk heuristic for prying into files
+prying_investigation(File) :-
+    kea_mandible::scan(File, Findings),
+    wit_engine::evaluate(Findings, Risk),
+    Risk > threshold,
+    bivouac::trigger_playbook(isolate_and_verify).
+----
+
+== Performance & Security Targets
+| Component | Target | Strategy |
+|-----------|--------|----------|
+| **Mandible Scan** | <500ms / 10k files | Rust concurrency + Mercury I/O |
+| **Wit Reasoning** | <100ms per trigger | Logtalk tabled predicates |
+| **MTD Fluctuation** | <10s full rotation | Resource-Record-Fluctuator automation |
+| **Trust Model** | mTLS throughout | Januskey + Zig-Bridge |
+
+== Academic Context
+Relevant to the user's research into:
+* **Agnotology:** Reducing ignorance in system observability.
+* **Axiology:** Defining value-based architecture over convenience.
+* **Ecological Security:** Low-footprint, "Green" auditing via `git-eco-bot`.
+
+== License
+MIT License (c) 2025 Jonathan D.A. Jewell.
+----
+
+---
+
+### **How to use this now?**
+
+1.  **Initialize `Refugia`:** This `.adoc` should be the `README.adoc` of your master repository.
+2.  **The Sub-Repos:** Each item in the **Cladistic Tree** (e.g., `Kea-Mandible`, `Kea-Wit`) should have its own repository, referencing this master architecture.
+3.  **The Librarian:** The script we discussed (`librarian.v`) will now sit in `Refugia/librarian/` and be the "Argus" that populates the `matrix/status_matrix.scm`.
+
+**Would you like me to generate the `Kea-Call` Cap'n Proto schema?** This is the literal "DNA" that will allow your **Kea-Mandible** to talk to **Kea-Wit** across the network. Shall I proceed?
