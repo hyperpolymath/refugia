@@ -1,6 +1,7 @@
 = Kea: A Curiosity-Driven, Post-Platform Security Ecosystem
 
-image:https://img.shields.io/badge/license-Palimpsest--MPL--1.0-purple.svg[Palimpsest-MPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"] image:https://img.shields.io/badge/philosophy-Palimpsest-purple.svg[Palimpsest,link="https://github.com/hyperpolymath/palimpsest-licence"]
+image:[Palimpsest-MPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
+
 Jonathan D.A. Jewell <https://github.com/hyperpolymath>
 v1.0.0-draft.1, December 2025
 :toc: macro
