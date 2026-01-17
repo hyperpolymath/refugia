@@ -1,34 +1,23 @@
 ;; SPDX-License-Identifier: PMPL-1.0
-;; STATE.scm - Current project state
+;; STATE.scm - Project state for refugia
 
-(define project-state
-  `((metadata
-      ((version . "1.0.0")
-       (schema-version . "1")
-       (created . "2026-01-10T13:50:31+00:00")
-       (updated . "2026-01-10T13:50:31+00:00")
-       (project . "refugia")
-       (repo . "refugia")))
+(state
+  (metadata
+    (version "0.1.0")
+    (schema-version "1.0")
+    (created "2024-06-01")
+    (updated "2025-01-17")
+    (project "refugia")
+    (repo "hyperpolymath/refugia"))
 
-    (current-position
-      ((phase . "Active Development")
-       (overall-completion . 50)
-       (working-features . ())))
+  (project-context
+    (name "Kea - Refugia")
+    (tagline "Curiosity-driven post-platform security ecosystem")
+    (tech-stack ("rust" "ada")))
 
-    (route-to-mvp
-      ((milestones
-        ((v1.0 . ((items . ("Initial setup" "Core functionality"))
-                  (status . "in-progress")))))))
-
-    (blockers-and-issues
-      ((critical . ())
-       (high . ())
-       (medium . ())
-       (low . ())))
-
-    (critical-next-actions
-      ((immediate . ())
-       (this-week . ())
-       (this-month . ())))
-
-    (session-history . ())))
+  (current-position
+    (phase "specification")
+    (overall-completion 15)
+    (working-features
+      ("Architecture design"
+       "Distributed high-assurance spec"))))
