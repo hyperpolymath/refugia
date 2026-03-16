@@ -68,7 +68,7 @@ A multi-language functional system leveraging a **Cladistic** repository structu
 .
 ├── Refugia/                     # The Ancestral Root (Master Hub)
 │   ├── matrix/                 # status_matrix.scm (The health map)
-│   ├── playbooks/              # PLAYBOOK.scm (Deterministic SOPs)
+│   ├── playbooks/              # .machine_readable/6a2/PLAYBOOK.a2ml (Deterministic SOPs)
 │   └── librarian/              # Argus audit logic (The Librarian)
 ├── Kea-Wit/                     # Neural Clade: Logic
 │   ├── heuristics/             # Logtalk-based reasoning
