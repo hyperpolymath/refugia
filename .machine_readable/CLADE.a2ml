@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: PMPL-1.0-or-later
+# Clade declaration — part of the gv-clade-index registry
+# See: https://github.com/hyperpolymath/gv-clade-index
+
+[identity]
+uuid = "511e79b6-4632-5ed3-8194-ad87be1e1177"
+primary-forge = "github"
+primary-owner = "hyperpolymath"
+canonical-name = "refugia"
+prefixed-name = "ap-refugia"
+
+[clade]
+primary = "ap"
+secondary = []
+assigned = "2026-03-16"
+rationale = ""
+
+[forges]
+github = "hyperpolymath/refugia"
+gitlab = "hyperpolymath/refugia"
+bitbucket = "hyperpolymath/refugia"
+
+[lineage]
+type = "standalone"
+parent = "Refuge/safe-space platform"
+born = "2026-03-16"
