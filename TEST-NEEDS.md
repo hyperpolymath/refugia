@@ -7,7 +7,7 @@
 | Category | Count | Notes |
 |----------|-------|-------|
 | Test directory | Present | `tests/` directory exists |
-| Test framework | Configured | Via justfile and setup.sh |
+| Test framework | Configured | Via Justfile and setup.sh |
 
 ## What's Covered
 
