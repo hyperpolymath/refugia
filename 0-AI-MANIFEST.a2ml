@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # 0-AI-MANIFEST.a2ml — Universal AI Agent Entry Point
 
 [manifest]
@@ -17,7 +17,7 @@ bot-directives = ".machine_readable/bot_directives/"
 scm-files-location = ".machine_readable/ ONLY — never root"
 container-file = "Containerfile — never Dockerfile"
 package-manager = "Deno preferred — never npm"
-license = "PMPL-1.0-or-later"
+license = "MPL-2.0"
 
 [session-startup]
 step-1 = "Read this manifest"
