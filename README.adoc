@@ -1,4 +1,10 @@
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 = Kea: A Curiosity-Driven, Post-Platform Security Ecosystem
+image:https://img.shields.io/badge/OpenSSF-Best_Practices-green?logo=openssourcesecurity[OpenSSF Best Practices,link="https://www.bestpractices.dev/en/projects/new?repo_url=https://github.com/hyperpolymath/refugia"]
+
+image:https://img.shields.io/badge/License-MPL_2.0-blue.svg[License: MPL-2.0,link="https://opensource.org/licenses/MPL-2.0"]
+
 
 image:[Palimpsest-MPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
 
@@ -133,15 +139,6 @@ Relevant to the user's research into:
 * **Ecological Security:** Low-footprint, "Green" auditing via `git-eco-bot`.
 
 == License
-Palimpsest-MPL-1.0 License (c) 2025 Jonathan D.A. Jewell.
-----
+This project is licensed under the Mozilla Public License, v. 2.0. See the `LICENSE` file for details.
 
----
-
-### **How to use this now?**
-
-1.  **Initialize `Refugia`:** This `.adoc` should be the `README.adoc` of your master repository.
-2.  **The Sub-Repos:** Each item in the **Cladistic Tree** (e.g., `Kea-Mandible`, `Kea-Wit`) should have its own repository, referencing this master architecture.
-3.  **The Librarian:** The script we discussed (`librarian.v`) will now sit in `Refugia/librarian/` and be the "Argus" that populates the `matrix/status_matrix.scm`.
-
-**Would you like me to generate the `Kea-Call` Cap'n Proto schema?** This is the literal "DNA" that will allow your **Kea-Mandible** to talk to **Kea-Wit** across the network. Shall I proceed?
+SPDX-License-Identifier: MPL-2.0
