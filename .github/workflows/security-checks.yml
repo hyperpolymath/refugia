@@ -16,6 +16,7 @@ jobs:
   secret-scanning:
     name: Detect Secrets
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: read
     steps:
@@ -32,6 +33,7 @@ jobs:
   dependency-review:
     name: Dependency Review
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     if: github.event_name == 'pull_request'
     permissions:
       contents: read
@@ -50,6 +52,7 @@ jobs:
   validate-actions:
     name: Validate GitHub Actions
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: read
     steps:
@@ -81,6 +84,7 @@ jobs:
   file-validation:
     name: Validate Security Files
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: read
     steps:
