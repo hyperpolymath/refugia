@@ -8,6 +8,7 @@ on:
   pull_request:
     branches: ["main"]
 permissions:
+  actions: read
   contents: read
 jobs:
   secret-scanning:
