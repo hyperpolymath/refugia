@@ -38,6 +38,12 @@ updates:
     schedule:
       interval: "daily"
 
+  # Bun (bun.lock): same directory and schedule as npm, so Dependabot keeps bun.lock in step
+  - package-ecosystem: "bun"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
   # Python/pip
   - package-ecosystem: "pip"
     directory: "/"
