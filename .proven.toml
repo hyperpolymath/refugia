@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MPL-2.0
+# Manifest for this repository (schema proven/manifest/v1); see
+# hyperpolymath/proven-cicd-and-workflows docs/PROVEN-ADOPTION.adoc.
+schema = "proven/manifest/v1"
+
+# refugia is currently a design and policy repository (AsciiDoc, Nickel policy,
+# machine-readable metadata). Its only detected source language is shell, via
+# setup.sh (an installer). tests/ holds only tests/fuzz/placeholder.txt.
+# TEST-NEEDS.adoc records that unit and integration tests are not yet written,
+# so unit and smoke are expiring waivers rather than N/A.
+
+[categories.unit.shell.waiver]
+reason = "no unit tests exist: tests/ contains only tests/fuzz/placeholder.txt and TEST-NEEDS.adoc lists unit tests as not implemented; needs a tests/unit.sh (for example covering setup.sh) or a real test suite"
+until = "2027-01-15"
+
+[categories.smoke.shell.waiver]
+reason = "no smoke test exists: nothing runs setup.sh (or any entry point) in a clean environment and checks it exits cleanly; needs a tests/smoke.sh"
+until = "2027-01-15"
+
+[categories.build.shell]
+na = "no compiled artefact: the only source is the POSIX shell installer setup.sh; the rest of the repository is documentation, Nickel policy and metadata"
+
+[categories.p2p.shell]
+na = "no running components and no inter-component seam: the repository holds design documents, policy and a setup script"
